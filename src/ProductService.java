@@ -93,8 +93,9 @@ public class ProductService {
     public void displayAll(String str){
 
         productLoader(str);
-        Product p = new Product();
-        System.out.println("Here are all the (" + (p.getCount()-1) + ") list of products we have:");
+        // one can not create instance of abstract class
+//        Product p = new Product();
+//        System.out.println("Here are all the (" + (p.getCount()-1) + ") list of products we have:");
         System.out.println("--------------------------------------------------------------");
         for(int i = 0; i < availableProducts.size(); i++){
             System.out.println(availableProducts.get(i).toString());

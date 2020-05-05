@@ -1,4 +1,4 @@
-public class Product {
+public abstract class Product {
     private String code;
     private String description;
     private double price;
@@ -39,9 +39,7 @@ public class Product {
             return false;
         }
         return true;
-
     }
-
 
     private String getFormattedPrice(double price) {
         // Use the NumberFormat class to format the price to 2 decimal places
